@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ffffff"
+    tools:context="com.joy.apkkothon.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350px"
+                android:id="@+id/about_image"
+                android:src="@drawable/apkkothon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_text"
+                android:layout_marginTop="5dp"
+                android:text="অ্যান্ড্রয়েড অ্যাপস, গেমস, খবর, টিপস, রিভিউ ও টিউটোরিয়াল সবই এখন মাতৃভাষা বাংলায়।\n
+
+apkkothon.net ব্লগটি, অ্যান্ড্রয়েড প্রেমীদের জন্য সম্পূর্ণরুপে উন্মুক্ত একটি মঞ্চ। যেখানে আপনি বিভিন্ন টিপস বা টিউটরিয়াল থেকে শুরু করে অ্যান্ড্রয়েডের যাবতীয় তথ্য জানতে পারবেন, এমনকি নিজেও লিখতে পারবেন। আমাদের পাশেই থাকুন
+"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:text="Contact :\nEmail : apkkothon@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

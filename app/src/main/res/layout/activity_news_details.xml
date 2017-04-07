@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_news_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.joy.apkkothon.NewsDetailsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_title"
+            android:background="#aed581"
+            android:padding="4sp"
+            android:textSize="17sp" >
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c5e1a5">
+            <TextView
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="12sp"
+                android:id="@+id/author"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:id="@+id/pub_date"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <WebView
+            android:layout_below="@+id/ll"
+            android:layout_above="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webview">
+        </WebView>
+        <com.google.android.gms.ads.AdView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_content_avobe">
+        </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
